@@ -26,10 +26,12 @@ A responsive web application built with **React** and **Vite** to explore meals 
 ## Getting Started
 
 ### Prerequisites
+
 * Node.js >= 18
 * npm or yarn
 
 ### Installation
+
 ```bash
 git clone https://github.com/your-username/mealabs.git
 cd mealabs
@@ -37,6 +39,7 @@ npm install
 ```
 
 ### Running the Development Server
+
 ```bash
 npm run dev
 ```
@@ -44,6 +47,7 @@ npm run dev
 Open [http://localhost:5173](http://localhost:5173) to view the app. Hot Module Replacement (HMR) is enabled by default.
 
 ### Building for Production
+
 ```bash
 npm run build
 ```
@@ -53,6 +57,10 @@ Preview the production build:
 ```bash
 npm run preview
 ```
+
+### Live Demo
+
+Check out the live application deployed on Vercel: [https://mealabs.vercel.app](https://mealabs.vercel.app)
 
 ---
 
@@ -94,9 +102,9 @@ For production, enabling TypeScript with type-aware linting is recommended.
 * [TheMealDB API](https://www.themealdb.com/api.php)
 * [TailwindCSS Documentation](https://tailwindcss.com/docs)
 * [Lucide Icons](https://lucide.dev/)
+* [Vercel Deployment](https://vercel.com)
 
 ---
 
 ## License
-
 MIT License
