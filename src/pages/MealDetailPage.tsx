@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { getMealDetail } from "../lib/api";
 import { ArrowLeft, ExternalLink } from "lucide-react";
+import Loading from "./Loading";
 
 const MealDetailPage = () => {
   const { id } = useParams();
@@ -31,12 +32,7 @@ const MealDetailPage = () => {
     fetchMealDetail();
   }, [id]);
 
-  if (isLoading)
-    return (
-      <div className="max-w-4xl mx-auto px-4 py-8 text-muted-foreground">
-        Loading...
-      </div>
-    );
+  if (isLoading) return <Loading size="full" />;
 
   if (!meal)
     return (

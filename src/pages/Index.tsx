@@ -13,6 +13,8 @@ import { Search, X } from "lucide-react";
 import { useParams, useLocation, useNavigate } from "react-router-dom";
 import FilterDropdown from "../components/FilterDropdown";
 import HeroSlider from "../components/HeroSlider";
+import Loading from "./Loading";
+import DataNotFound from "./DataNotFound";
 
 /* ── Main Page ── */
 const Index = () => {
@@ -265,7 +267,7 @@ const Index = () => {
 
         {/* Meal Grid */}
         {loading ? (
-          <p className="text-muted-foreground">Loading...</p>
+          <Loading />
         ) : displayMeals && displayMeals.length > 0 ? (
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 animate-fade-in">
             {displayMeals.slice(0, 20).map((meal) => (
@@ -273,7 +275,7 @@ const Index = () => {
             ))}
           </div>
         ) : (
-          <p className="text-muted-foreground">No meals found.</p>
+          <DataNotFound data="Meals" />
         )}
       </div>
     </>
