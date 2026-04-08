@@ -25,6 +25,18 @@ export default {
         destructive: "hsl(var(--destructive))",
         "destructive-foreground": "hsl(var(--destructive-foreground))",
       },
+      keyframes: {
+        orbit: {
+          '0%': { transform: 'translate(0, 0)' },
+          '25%': { transform: 'translate(2px, -2px)' },
+          '50%': { transform: 'translate(0, -4px)' },
+          '75%': { transform: 'translate(-2px, -2px)' },
+          '100%': { transform: 'translate(0, 0)' },
+        },
+      },
+      animation: {
+        orbit: 'orbit 0.6s ease-in-out',
+      },
     },
   },
   plugins: [],

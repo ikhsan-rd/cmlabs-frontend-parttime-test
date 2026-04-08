@@ -182,8 +182,8 @@ const Index = () => {
       <section className="relative overflow-hidden py-24 md:py-32 px-4">
         <HeroSlider meals={popularMeals || []} />
         <div className="relative z-10 max-w-3xl mx-auto text-center space-y-6">
-          <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow-lg">
-            Mea<span className="text-primary">Labs</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow-xl">
+            Mea<span className="text-primary text-outline">Labs</span>
           </h1>
           <p className="text-white/90 text-lg font-medium">
             Discover Delicious Recipes from Around the World
@@ -191,9 +191,9 @@ const Index = () => {
 
           <form
             onSubmit={handleSearch}
-            className="flex bg-background items-center bg-card rounded-xl px-4 py-3 gap-3 max-w-md mx-auto shadow-lg"
+            className="flex bg-background items-center bg-card rounded-full pl-5 px-4 py-2 gap-3 max-w-md mx-auto shadow-lg"
           >
-            <Search className="w-5 h-5 text-muted-foreground shrink-0" />
+            {/* <Search className="w-5 h-5 text-muted-foreground shrink-0" /> */}
             <input
               type="text"
               value={searchQuery}
@@ -203,9 +203,11 @@ const Index = () => {
             />
             <button
               type="submit"
-              className="bg-primary text-primary-foreground px-4 py-1.5 rounded-lg text-sm font-medium shrink-0 hover:opacity-90 transition-opacity"
+              className="flex items-center justify-center p-1 text-primary-foreground rounded-full text-sm font-medium shrink-0 relative overflow-hidden"
             >
-              Search
+              <span className="block w-6 h-6 text-primary shrink-0 hover:animate-orbit">
+                <Search className="w-full h-full" />
+              </span>
             </button>
           </form>
         </div>

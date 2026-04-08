@@ -36,7 +36,7 @@ const MealCard = ({
         </div>
       </div>
       <div className="p-3">
-        <h3 className="font-serif text-sm font-semibold leading-tight text-card-foreground line-clamp-2 group-hover:text-primary transition-colors duration-200">
+        <h3 className="text-sm font-semibold leading-tight text-card-foreground line-clamp-2 group-hover:text-primary transition-colors duration-200">
           {strMeal}
         </h3>
       </div>

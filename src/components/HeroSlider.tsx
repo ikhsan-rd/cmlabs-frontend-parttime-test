@@ -17,7 +17,7 @@ const HeroSlider = ({ meals }: { meals: any[] }) => {
   if (images.length === 0) return null;
 
   return (
-    <div className="absolute inset-0 overflow-hidden opacity-90">
+    <div className="absolute inset-0 overflow-hidden">
       {images.map((meal, i) => (
         <img
           key={meal.idMeal}
@@ -27,7 +27,7 @@ const HeroSlider = ({ meals }: { meals: any[] }) => {
           style={{ opacity: i === current ? 1 : 0 }}
         />
       ))}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70" />
     </div>
   );
 };

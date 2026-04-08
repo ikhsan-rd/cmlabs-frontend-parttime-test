@@ -58,9 +58,9 @@ const MealDetailPage = () => {
   return (
     <>
       {/* THUMBNAIL */}
-      <div className="relative h-72 md:h-96 w-full overflow-hidden rounded-b-lg xl:rounded-lg xl:mt-4 max-w-6xl mx-auto">
+      <div className="relative h-72 md:h-96 w-full overflow-hidden rounded-b-lg xl:rounded-lg xl:mt-4 xl:max-w-6xl mx-auto">
         <img
-          src={meal.strMealThumb}
+          src={`${meal.strMealThumb}`}
           alt={meal.strMeal}
           className="w-full h-full object-cover"
         />
