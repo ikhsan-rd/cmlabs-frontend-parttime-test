@@ -1,16 +1,102 @@
-# React + Vite
+# MeaLabs – React + Vite Meal Explorer
+A responsive web application built with **React** and **Vite** to explore meals from around the world using [TheMealDB API](https://www.themealdb.com/). Users can browse popular meals and search by name with an interactive hero section.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## Features
+* **Hero slider** displaying popular meals
+* **Search functionality** with live navigation
+* **Filter by category, area, or ingredient**
+* **Responsive layout** optimized for all screen sizes
+* **Loading & empty states** with icons
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Tech Stack
+* **React** – UI library
+* **Vite** – Development & build tool
+* **TypeScript** – Type safety
+* **TailwindCSS** – Utility-first styling
+* **Lucide Icons** – Icon components
+* **React Router** – Routing
+* **TheMealDB API** – Meal data
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+* Node.js >= 18
+* npm or yarn
+
+### Installation
+```bash
+git clone https://github.com/your-username/mealabs.git
+cd mealabs
+npm install
+```
+
+### Running the Development Server
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) to view the app. Hot Module Replacement (HMR) is enabled by default.
+
+### Building for Production
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+---
+
+## Project Structure
+```
+src/
+├─ components/      # HeroSlider, FilterDropdown, Loading, MealCard
+├─ lib/             # API utilities (TheMealDB integration)
+├─ pages/           # Page components
+├─ App.tsx          # Application entry
+└─ main.tsx         # React DOM render
+```
+
+---
+
+## Custom Behaviors
+* **Hero slider**
+  Automatically cycles through popular meals with smooth transitions.
+
+* **Meal Card**
+  Card for search & filter results, displaying the meal image and title clearly.
+
+* **Search and filters**
+  Users can search meals and filter by category, area, or ingredient.
+
+* **Loading & empty states**
+  Animated icons maintain layout consistency.
+
+---
+
+## ESLint & TypeScript
+The project includes a minimal ESLint setup compatible with React.
+For production, enabling TypeScript with type-aware linting is recommended.
+
+---
+
+## References
+* [Vite + React Template](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
+* [TheMealDB API](https://www.themealdb.com/api.php)
+* [TailwindCSS Documentation](https://tailwindcss.com/docs)
+* [Lucide Icons](https://lucide.dev/)
+
+---
+
+## License
+
+MIT License
